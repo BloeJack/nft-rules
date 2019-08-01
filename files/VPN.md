@@ -63,7 +63,7 @@ table ip nat {
 		type nat hook postrouting priority 100;
 	
 		# enable NAT for VPN
-		ifname $vpn_if$ oifname $outside_if$ ip saddr $vpn_subnet$ masquerade
+		iifname $vpn_if$ oifname $outside_if$ ip saddr $vpn_subnet$ masquerade
 	
 	}
 	
